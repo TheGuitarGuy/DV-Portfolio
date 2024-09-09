@@ -1,0 +1,34 @@
+body {
+    /* Set line height to 1.5 times the font size
+       and use the OS’s UI font as the website font
+     */
+    font: 100%/1.5 system-ui;
+    max-width: 100ch;
+    margin-inline: auto;
+    padding: 20px;
+}
+ul{
+    display:contents;
+}
+
+a:active{
+    border-bottom: 3px;
+}
+
+
+a{
+    flex: 1;
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    display: contents;
+}
+nav{
+    display: flex;
+    /* border-bottom: solid 1px; */
+}
+#kennion{
+    max-width: 100px;
+}
