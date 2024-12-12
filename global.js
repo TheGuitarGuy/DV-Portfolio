@@ -1,9 +1,9 @@
 // Define pages for navigation
 const pages = [
-    { url: "home/index.html", title: "Home" },
-    { url: "contact/index.html", title: "Contact" },
-    { url: "resume/index.html", title: "Resume" },
-    { url: "projects/index.html", title: "Projects" }
+    { url: "/home/index.html", title: "Home" },
+    { url: "/contact/index.html", title: "Contact" },
+    { url: "/resume/index.html", title: "Resume" },
+    { url: "/projects/index.html", title: "Projects" }
 ];
 
 // Create navigation dynamically
@@ -11,25 +11,17 @@ const nav = document.createElement("nav");
 const ul = document.createElement("ul");
 nav.appendChild(ul);
 
-// Check if we are on the home page
-const ARE_WE_HOME = document.body.classList.contains("home");
-
 // Generate navigation links
 for (const page of pages) {
-    let { url, title } = page;
-
-    // Adjust relative URLs for non-home pages
-    if (!ARE_WE_HOME && !url.startsWith("http")) {
-        url = "../" + url;
-    }
+    const { url, title } = page;
 
     const li = document.createElement("li");
     const a = document.createElement("a");
     a.href = url;
     a.textContent = title;
 
-    // Highlight current page
-    if (a.host === location.host && a.pathname === location.pathname) {
+    // Highlight the current page
+    if (location.pathname === new URL(url, location.origin).pathname) {
         a.classList.add("current");
     }
 
