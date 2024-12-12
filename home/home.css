@@ -1,0 +1,82 @@
+/* Import common styles */
+@import url('../common.css');
+
+/* Home Page Specific Styles */
+.home-container {
+    text-align: center; /* Center-aligns the content */
+    padding: 40px 20px;
+    background-color: var(--color-light); /* Use global light mode variable */
+    color: var(--color-dark); /* Use global text color */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto; /* Centers the container */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body[data-theme="dark"] .home-container {
+    background-color: var(--color-gray); /* Adjust for dark mode */
+    color: var(--color-dark);
+}
+
+/* About Me Section */
+.home-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--color-dark);
+    transition: color 0.3s ease;
+}
+
+body[data-theme="dark"] .home-container h2 {
+    color: var(--color-dark);
+}
+
+.home-container p {
+    font-size: 1.2rem;
+    color: var(--color-dark);
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+}
+
+body[data-theme="dark"] .home-container p {
+    color: var(--color-dark);
+}
+
+/* Kennion Image Styling */
+#kennion {
+    max-width: 200px; /* Adjust as needed */
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+}
+
+/* Hover Effect for Image */
+#kennion:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhances shadow on hover */
+}
+
+body[data-theme="dark"] #kennion {
+    filter: brightness(0.9); /* Dim the image slightly in dark mode */
+}
+
+/* Responsive Design for Home Page */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 20px 10px;
+    }
+
+    .home-container h2 {
+        font-size: 1.75rem;
+    }
+
+    .home-container p {
+        font-size: 1rem;
+    }
+
+    #kennion {
+        max-width: 150px;
+    }
+}

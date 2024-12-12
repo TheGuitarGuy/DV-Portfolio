@@ -1,24 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="resume.css">
+    <script src="../global.js" type="module"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Resume/styles.css">
-    <link rel="stylesheet" href="styles.css">
     <title>Resume</title>
 </head>
 <body>
-    <nav>
-        <a href="../home/index.html">Home</a>
-        <a href="../contact/index.html">Contact</a>
-        <a href="../Resume/index.html">Resume</a>
-        <a href="../projects/index.html">Projects</a>
-    </nav>
+
     <h1>Resume</h1>
-    <button id = "push_this_button">PUSH THIS BUTTON FOR A RESUME</button>
-    <form method="get" action="file.doc">
-        <button type="submit">Download!</button>
-     </form>
+
+    <div class="resume-container">
+        <!-- Personal Information -->
+        <section class="personal-info">
+            <h2>Personal Information</h2>
+            <p><strong>Name:</strong> Kennion Gubler</p>
+            <p><strong>Email:</strong> <a href="mailto:gublerkennion@gmail.com">gublerkennion@gmail.com</a></p>
+            <p><strong>Portfolio:</strong> <a href="https://www.kenniongubler.me" target="_blank">www.kenniongubler.me</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kennion-gubler/" target="_blank">linkedin.com/in/kennion-gubler</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/TheGuitarGuy" target="_blank">github.com/TheGuitarGuy</a></p>
+        </section>
+
+        <!-- Education -->
+        <section class="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Master of Science in Computer Science</h3>
+                <p>Carnegie Mellon University, Pittsburgh, PA</p>
+                <p>May 2023 – August 2023</p>
+            </div>
+            <div class="education-item">
+                <h3>Bachelor of Science in Information Systems</h3>
+                <p>Brigham Young University - Idaho, Rexburg, ID</p>
+                <p>September 2021 – February 2023</p>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="experience">
+            <h2>Professional Experience</h2>
+            <div class="experience-item">
+                <h3>UX Engineer/Designer</h3>
+                <p>KENNION GUBLER</p>
+                <p>August 2024 – August 2025</p>
+                <ul>
+                    <li>Researched under Professor Vincent Aleven to develop mobile educational apps that encourage mastery goal orientation using Lumilo augmented reality.</li>
+                    <li>Consulted current literature to design mockups based on insights in Figma.</li>
+                    <li>Implemented designs using web development technologies (HTML, CSS, JavaScript).</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Developer & Educator</h3>
+                <p>Pod Dating</p>
+                <p>December 2022 – Present</p>
+                <ul>
+                    <li>Created mobile apps, websites, ML models, and utilized data structures and algorithms.</li>
+                    <li>Raised students’ grades by up to 3 letter grades.</li>
+                    <li>Graded 100s of frontend assignments based on strict frontend principles and best practices.</li>
+                    <li>Developed a 3D game for class using Unity and C#.</li>
+                    <li>Took part in a business pitch competition with over 20 contestants and won $100.</li>
+                    <li>Created an ML model with the Adam optimizer that predicts the likelihood of lung cancer ~95% of the time using various features in datasets.</li>
+                    <li>Competed against 100s of teams and became a finalist in Boise, Idaho.</li>
+                    <li>Pitched a store mapping service app to experienced entrepreneurs and investors.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>UX Developer</h3>
+                <p>BMW</p>
+                <p>August 2022 – December 2022</p>
+                <ul>
+                    <li>Collaborated with UX designers and product managers to develop design changes for Rolls Royce manufacturing app using Figma, CSS, Angular, Marvelapp, Zeplin.</li>
+                    <li>Built applications using frontend and backend principles.</li>
+                    <li>Technologies used: Figma, Zeplin, Marvelapp, Angular, TypeScript, SQL.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Programming Tutor</h3>
+                <p>AiGo Learning</p>
+                <p>September 2021 – February 2023</p>
+                <ul>
+                    <li>Tutored students ages 10 – 14 in basic programming concepts in Swift and Python.</li>
+                    <li>Raised students’ grades by up to 3 letter grades.</li>
+                    <li>Graded 100s of frontend assignments based on strict principles and best practices.</li>
+                    <li>Designed, developed, and initiated a new iOS design/development course available to 1000s of AiGo Learning students.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Design Tools:</strong> Sketch, Adobe XD, Zeplin, Invision, Figma</li>
+                <li><strong>Programming Languages:</strong> Swift, Python, Kotlin, HTML/CSS/JavaScript/TypeScript, Angular</li>
+                <li><strong>Platforms & Tools:</strong> AWS (Basic Understanding), DevOps, After Effects, Unity 3D, Blender</li>
+                <li><strong>Methodologies:</strong> Scrum, Scaled Agile Framework</li>
+            </ul>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="../projects/A1 Exploratory Analysis/index.html">Project A1: Exploratory Data Analysis</a></li>
+                <li><a href="../projects/Lung Cancer ML Model/index.html">Lung Cancer ML Model</a></li>
+                <li><a href="../projects/3D Game/index.html">3D Game Development</a></li>
+                <li><a href="../projects/Store Mapping Service/index.html">Store Mapping Service App</a></li>
+                <li><a href="../projects/Apple Vision Pro Apps/index.html">Apple Vision Pro Apps</a></li>
+            </ul>
+        </section>
+
+        <!-- Download Resume -->
+        <section class="download-resume">
+            <h2>Download Resume</h2>
+            <form method="get" action="file.doc">
+                <button type="submit">Download!</button>
+            </form>
+        </section>
+    </div>
 </body>
 </html>
