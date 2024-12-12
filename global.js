@@ -2,7 +2,7 @@
 const pages = [
     { url: "/home/index.html", title: "Home" },
     { url: "/contact/index.html", title: "Contact" },
-    { url: "/Resume/index.html", title: "Resume" },
+    { url: "/resume/index.html", title: "Resume" },
     { url: "/projects/index.html", title: "Projects" }
 ];
 
