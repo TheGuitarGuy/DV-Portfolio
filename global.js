@@ -1,9 +1,9 @@
 // Define pages for navigation
 const pages = [
-    { url: "/home/index.html", title: "Home" },
-    { url: "/contact/index.html", title: "Contact" },
-    { url: "/resume/index.html", title: "Resume" },
-    { url: "/projects/index.html", title: "Projects" }
+    { url: "home/index.html", title: "Home" },
+    { url: "contact/index.html", title: "Contact" },
+    { url: "resume/index.html", title: "Resume" },
+    { url: "projects/index.html", title: "Projects" }
 ];
 
 // Create navigation dynamically
