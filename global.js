@@ -1,10 +1,12 @@
 // Define pages for navigation
+const REPO_NAME = "DV-PORTFOLIO"; // Update with your actual repo name
 const pages = [
-    { url: "/home/index.html", title: "Home" },
-    { url: "/contact/index.html", title: "Contact" },
-    { url: "/resume/index.html", title: "Resume" },
-    { url: "/projects/index.html", title: "Projects" }
+    { url: `/${REPO_NAME}/home/index.html`, title: "Home" },
+    { url: `/${REPO_NAME}/contact/index.html`, title: "Contact" },
+    { url: `/${REPO_NAME}/Resume/index.html`, title: "Resume" },
+    { url: `/${REPO_NAME}/projects/index.html`, title: "Projects" }
 ];
+
 
 // Create navigation dynamically
 const nav = document.createElement("nav");
